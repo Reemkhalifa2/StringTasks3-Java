@@ -9,6 +9,7 @@ public class equalIsNot {
             if(str.substring(i,i+2).equals("is")){
                 countIs++;
             }
+            
         }for(int j=0; j<str.length()-2; j++){
             if(str.substring(j,j+3).equals("not")){
                 countNot++;
