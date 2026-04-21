@@ -6,10 +6,10 @@ public class withoutString {
     public static String withoutString(String a, String b){
         String result ="";
         for (int i = 0; i < a.length(); i++) {
-            if (i <= a.length() - b.length() && !a.substring(i, i + b.length()).equals(b)) {
-                result += a.charAt(i);
-            }else {
+            if (i <= a.length() - b.length() && a.substring(i, i + b.length()).equalsIgnoreCase(b)) {
                 i += b.length() - 1;
+            }else {
+                result += a.charAt(i);
             }
         }
 
