@@ -3,13 +3,13 @@ public class withoutString {
         System.out.println(withoutString("Hello ther", "llo"));
 
     }
-    public static String withoutString(String a, String b){
+    public static String withoutString(String base, String remove){
         String result ="";
-        for (int i = 0; i < a.length(); i++) {
-            if (i <= a.length() - b.length() && a.substring(i, i + b.length()).equalsIgnoreCase(b)) {
-                i += b.length() - 1;
+        for (int i = 0; i < base.length(); i++) {
+            if (i <= base.length() - remove.length() && base.substring(i, i + remove.length()).equalsIgnoreCase(remove)) {
+                i += remove.length() - 1;
             }else {
-                result += a.charAt(i);
+                result += base.charAt(i);
             }
         }
 
