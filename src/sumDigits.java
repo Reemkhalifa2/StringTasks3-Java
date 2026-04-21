@@ -1,2 +1,16 @@
 public class sumDigits {
+    public static void main(String[] args) {
+        System.out.println(sumDigits("aa11b33"));
+
+    }
+    public static Integer sumDigits(String str){
+        Integer sum =0;
+        for(int i=0; i<str.length();i++){
+            char ch = str.charAt(i);
+            if(Character.isDigit(ch)){
+                sum += Integer.parseInt(str.substring(i,i+1));
+            }
+        }
+        return sum;
+    }
 }
