@@ -1,6 +1,6 @@
 public class sameEnds {
     public static void main(String[] args) {
-        System.out.println(sameEnds("xx"));
+        System.out.println(sameEnds("xxx"));
 
     }
     public static String sameEnds(String str) {
