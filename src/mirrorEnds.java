@@ -12,6 +12,5 @@ public class mirrorEnds {
             }
         }
         return result;
-
     }
 }
