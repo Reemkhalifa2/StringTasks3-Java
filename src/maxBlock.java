@@ -12,7 +12,6 @@ public class maxBlock {
             } else {
                 temp = "" + str.charAt(i);
             }
-
             if (temp.length() > block.length()) {
                 block = temp;
             }
