@@ -8,20 +8,18 @@ public class sumNumbers {
         String result ="";
         for(int i=0; i<str.length(); i++){
             char ch =str.charAt(i);
-            if(Character.isDigit(ch)){
-            if(i==0|| Character.isDigit(str.charAt(i-1)) ){
+            if(Character.isDigit(ch)) {
                 result += ch;
-                sum+=Integer.parseInt(result);
             }else{
-
-                result = ""+ch;
-
+                if(!result.isEmpty()){
+                    sum+=Integer.parseInt(result);
+                    result="";
+                }
             }
-
-            }
-
         }
-
+        if(!result.isEmpty()){
+            sum += Integer.parseInt(result);
+        }
         return sum;
     }
 }
